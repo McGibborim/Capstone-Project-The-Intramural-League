@@ -1,11 +1,11 @@
+// src/index.js
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'; // Import your CSS file here
+import './index.css'
+import App from './App'
 
-// Make sure App.jsx lives in the same folder (src/)
-import App from './App';
+const rootEl = document.getElementById('root')
+if (!rootEl) throw new Error('Could not find #root element')
 
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<App />);
+const root = ReactDOM.createRoot(rootEl)
+root.render(<App />)

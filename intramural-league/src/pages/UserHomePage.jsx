@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+import UserHeader from '../components/UserHeader'
 import SectionCard from '../components/SectionCard'
 import GameList from '../components/GameList'
 import TeamList from '../components/TeamList'
@@ -15,7 +15,8 @@ export default function UserHomePage() {
 
   return (
     <div className="min-h-screen bg-maroon">
-      <Header />
+      <UserHeader user={null} />
+      {/* dashboard content */}
       <main className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Left sidebar */}
         <aside className="space-y-6">
