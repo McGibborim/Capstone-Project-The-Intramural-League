@@ -5,5 +5,7 @@ import './index.css'; // Import your CSS file here
 // Make sure App.jsx lives in the same folder (src/)
 import App from './App';
 
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<App />);
