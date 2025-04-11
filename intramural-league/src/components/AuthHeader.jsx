@@ -12,7 +12,7 @@ export default function AuthHeader() {
       {/* Home Button */}
       <a
         href="#landing"
-        className="px-4 py-2 bg-white text-maroon border-2 border-orange rounded hover:bg-gray-100 transition"
+        className="px-4 py-2 bg-ivory text-maroon border-2 border-tan rounded-lg hover:bg-gray-100 transition"
       >
         Home
       </a>

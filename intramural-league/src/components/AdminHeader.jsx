@@ -4,7 +4,7 @@ import logo from '../assets/logos/logo.png'
 export default function AdminHeader() {
   const [sticky, setSticky] = useState(false)
   const tabs = [
-    { label: 'Dashboard', hash: '#admin/dashboard' },
+    { label: 'Dashboard', hash: '#admin' },
     { label: 'Leagues',   hash: '#admin/leagues' },
     { label: 'Sports',    hash: '#admin/sports' },
   ]
@@ -30,10 +30,13 @@ export default function AdminHeader() {
             key={t.hash}
             href={t.hash}
             className="
-              px-4 py-2 bg-ivory text-text
-              border-2 border-tan rounded-lg
-              hover:bg-tan/20 transition
-            "
+                px-4 py-2
+                bg-ivory text-text
+                border-2 border-tan
+                rounded-lg
+                hover:bg-tan hover:text-ivory
+                transition
+              "
           >
             {t.label}
           </a>

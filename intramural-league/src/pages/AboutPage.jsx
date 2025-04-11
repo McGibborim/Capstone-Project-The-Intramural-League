@@ -84,7 +84,7 @@ export default function AboutPage() {
           <p className="mb-8">Get in touch with our team to see how we can help your campus.</p>
           <a
             href="#partners"
-            className="px-8 py-3 bg-white text-maroon font-bold rounded hover:bg-gray-200 transition"
+            className="px-8 py-3 bg-ivory text-maroon font-bold rounded-lg hover:bg-tan hover:text-ivory transition"
           >
             Partner With Us
           </a>

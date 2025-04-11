@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FeatureCard({ icon, title, description }) {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+    <div className="bg-ivory rounded-lg shadow-lg p-6 text-center">
       {icon && (
         <img
           src={icon}

@@ -40,7 +40,7 @@ export default function LandingPage() {
           <p className="text-lg md:text-2xl mb-8">
             Organize, compete, and connect—your intramural sports community starts here.
           </p>
-          <button className="px-8 py-3 bg-orange text-white font-bold rounded hover:bg-orange/90 transition">
+          <button className="px-8 py-3 bg-charcoal text-white font-bold border-tan rounded-lg hover:bg-tan/90 transition">
             Get Started
           </button>
         </div>
@@ -72,7 +72,7 @@ export default function LandingPage() {
           </p>
           <a
             href="#signup"
-            className="inline-block px-8 py-3 bg-white text-maroon font-bold rounded hover:bg-gray-200 transition">
+            className="inline-block px-8 py-3 bg-ivory text-maroon font-bold rounded-lg hover:bg-tan hover:text-ivory transition">
             Sign Up Now
             </a>
         </div>

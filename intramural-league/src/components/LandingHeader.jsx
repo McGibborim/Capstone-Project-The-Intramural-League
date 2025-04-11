@@ -28,18 +28,18 @@ export default function LandingHeader() {
 
   // Helper to pick classes based on type
   const linkClasses = {
-    main: 'text-white hover:text-gray-300 transition',
+    main: 'px-4 py-2 bg-ivory text-text border-2 border-tan rounded-lg hover:bg-tan hover:text-ivory transition"',
     'auth-secondary':
-      'px-4 py-2 bg-white text-maroon border-2 border-orange rounded hover:bg-gray-100 transition',
+      'px-4 py-2 bg-ivory text-maroon border-2 border-tan rounded-lg hover:bg-gray-100 transition',
     'auth-primary':
-      'px-4 py-2 bg-orange text-white border-2 border-orange rounded hover:bg-orange/90 transition',
+      'px-4 py-2 bg-tan text-white border-2 border-tan rounded-lg hover:bg-tan/90 transition',
   }
 
   return (
     <header
       className={`
         relative sticky top-0 z-50 flex items-center justify-between
-        px-6 py-3 bg-maroon transition-shadow
+        px-6 py-3 bg-maroon border-b-2 border-tan transition-shadow 
         ${isSticky ? 'shadow-lg' : ''}
       `}
     >
@@ -67,7 +67,7 @@ export default function LandingHeader() {
       {isSticky && (
         <button
           onClick={() => setMenuOpen(o => !o)}
-          className="p-2 bg-white rounded border-2 border-orange focus:outline-none"
+          className="p-2 bg-ivory rounded-lg border-2 border-tan focus:outline-none"
           aria-label="Toggle menu"
         >
           <MenuIcon className="w-6 h-6 text-maroon" />
@@ -76,7 +76,7 @@ export default function LandingHeader() {
 
       {/* Dropdown menu */}
       {isSticky && menuOpen && (
-        <div className="absolute right-6 top-full mt-2 w-48 bg-white rounded border-2 border-orange shadow-lg">
+        <div className="absolute right-6 top-full mt-2 w-48 bg-ivory rounded-lg border-2 border-tan shadow-lg">
           {navItems.map(item => (
             <a
               key={item.hash}

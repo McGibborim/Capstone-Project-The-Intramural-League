@@ -75,7 +75,7 @@ export default function AdminDashboardPage() {
             onChange={e => setNote(e.target.value)}
             rows={4}
             placeholder="Enter your note here..."
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-tan"
           />
           {error && <div className="text-red-500">{error}</div>}
           <button

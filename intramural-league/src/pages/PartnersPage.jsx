@@ -88,7 +88,7 @@ export default function PartnersPage() {
           <p className="mb-8">Fill out our partner inquiry form and we’ll be in touch.</p>
           <a
             href="#contact"
-            className="px-8 py-3 bg-white text-maroon font-bold rounded hover:bg-gray-200 transition"
+            className="px-8 py-3 bg-ivory text-maroon font-bold rounded-lg hover:bg-tan hover:text-ivory transition"
           >
             Contact Sales
           </a>
