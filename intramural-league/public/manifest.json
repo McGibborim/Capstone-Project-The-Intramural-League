@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "The Intermural League",
+  "name": "The Intermural League",
+  "description": "The Intermural League is a platform for organizing and managing intramural sports leagues.",
   "icons": [
     {
       "src": "favicon.ico",

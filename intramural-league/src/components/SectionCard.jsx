@@ -1,15 +1,19 @@
-// src/components/SectionCard.jsx
 import React from 'react'
 
 export default function SectionCard({ title, children }) {
   return (
-    <section className="bg-white border-4 border-orange rounded-lg overflow-hidden">
+    <section className="bg-tan rounded-2xl overflow-hidden">
       {title && (
-        <h2 className="bg-charcoal text-white text-center py-2 font-semibold">
+        <h2 className="
+            text-center py-3
+            text-ivory
+            font-bold
+            text-lg md:text-xl
+        ">
           {title}
         </h2>
       )}
-      <div className="p-4 space-y-4">
+      <div className="p-4">
         {children}
       </div>
     </section>

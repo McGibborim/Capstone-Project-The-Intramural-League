@@ -7,9 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        maroon: '#5F0C1E',
-        orange: '#CCBD8E',
-        charcoal: '#1F1D2A',
+        maroon:  "#5F0C1E",
+        ivory:   "#f2ebd0",
+        charcoal:"#1F1D2A",
+        tan:     "#CCBD8E",
+        text:    "#463700",
       },
     },
   },

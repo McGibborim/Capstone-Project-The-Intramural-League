@@ -6,6 +6,9 @@ import PartnersPage from './pages/PartnersPage'
 import UserHomePage from './pages/UserHomePage'
 import LoginPage    from './pages/LoginPage'
 import SignUpPage   from './pages/SignUpPage'
+import AdminDashboardPage    from './pages/AdminDashboardPage'
+import AdminLeaguesPage      from './pages/AdminLeaguesPage'
+import AdminSportsPage       from './pages/AdminSportsPage'
 
 export default function App() {
   const getPageFromHash = () => window.location.hash.slice(1) || 'landing'
@@ -19,6 +22,15 @@ export default function App() {
 
   let Content
   switch (page) {
+    case 'admin':
+      Content = AdminDashboardPage
+      break
+    case 'admin/leagues':
+      Content = AdminLeaguesPage
+      break
+    case 'admin/sports':
+      Content = AdminSportsPage
+      break
     case 'about':
       Content = AboutPage
       break

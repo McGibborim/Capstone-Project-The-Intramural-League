@@ -14,28 +14,28 @@ export default function UserHomePage() {
   const newsUpdates = []
 
   return (
-    <div className="min-h-screen bg-maroon">
+    <div className="min-h-screen bg-charcoal text-text">
       <UserHeader user={null} />
       {/* dashboard content */}
       <main className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Left sidebar */}
         <aside className="space-y-6">
-          <SectionCard title="Upcoming Games">
-            <GameList games={upcomingGames} />
-          </SectionCard>
-          <SectionCard title="My Teams">
-            <TeamList teams={myTeams} />
-          </SectionCard>
-          <SectionCard title="Upcoming Leagues">
-            <LeagueList leagues={upcomingLeagues} />
-          </SectionCard>
+        <SectionCard title="Upcoming Games">
+          <GameList games={upcomingGames} />
+        </SectionCard>
+        <SectionCard title="My Teams">
+          <TeamList teams={myTeams} />
+        </SectionCard>
+        <SectionCard title="Upcoming Leagues">
+          <LeagueList leagues={upcomingLeagues} />
+        </SectionCard>
         </aside>
 
         {/* Right: News wrapped in SectionCard */}
         <div className="md:col-span-2 space-y-6">
           <SectionCard title="League Updates">
             <NewsFeed updates={newsUpdates} />
-        </SectionCard>
+          </SectionCard>
         </div>
       </main>
     </div>
